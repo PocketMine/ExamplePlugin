@@ -8,6 +8,10 @@ use PocketMine\Plugin\PluginBase;
 use PocketMine\Utils\TextFormat;
 
 class MainClass extends PluginBase{
+	
+	public function onLoad(){
+		console(TextFormat::WHITE . "[ExamplePlugin] I've been loaded!");
+	}
 
 	public function onEnable(){
 		console(TextFormat::DARK_GREEN . "[ExamplePlugin] I've been enabled!");
