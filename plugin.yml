@@ -1,0 +1,20 @@
+#name, main, version and api are required
+name: ExamplePlugin
+main: ExamplePlugin\MainClass
+version: 1.0.0
+api: [1.0.0]
+
+
+load: POSTWORLD
+author: PocketMine Team
+description: Example plugin showing the new API
+website: https://github.com/PocketMine/ExamplePlugin
+commands:
+ example:
+  description: Example command
+  usage: "Usage: /example"
+  permission: exampleplugin.command.example
+permissions:
+ exampleplugin.command.example:
+  description: "Allows the user to run the example command"
+  default: true
