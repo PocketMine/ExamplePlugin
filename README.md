@@ -1,1 +1,1 @@
-#### Place these files inside a folder called _ExamplePlugin_ in the plugins directory.
+#### Place these files inside a folder in the plugins directory.
