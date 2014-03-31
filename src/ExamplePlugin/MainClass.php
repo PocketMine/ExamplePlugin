@@ -4,6 +4,8 @@ namespace ExamplePlugin;
 
 use PocketMine\Command\Command;
 use PocketMine\Command\CommandSender;
+use PocketMine\Event\Listener;
+use PocketMine\Plugin\EventExecutor;
 use PocketMine\Plugin\PluginBase;
 use PocketMine\Utils\TextFormat;
 
@@ -14,6 +16,7 @@ class MainClass extends PluginBase{
 	}
 
 	public function onEnable(){
+		$this->getServer()->getPluginManager()->registerEvents(new PlayerEventListener(), $this);
 		console(TextFormat::DARK_GREEN . "[ExamplePlugin] I've been enabled!");
 	}
 
