@@ -2,13 +2,14 @@
 
 namespace ExamplePlugin;
 
-use PocketMine\Command\Command;
-use PocketMine\Command\CommandSender;
-use PocketMine\Event\Listener;
-use PocketMine\Event\Player\PlayerRespawnEvent;
-use PocketMine\Player;
-use PocketMine\Plugin\PluginBase;
-use PocketMine\Utils\TextFormat;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerRespawnEvent;
+use pocketmine\Player;
+use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
+use pocketmine\utils\TextFormat;
 
 class MainClass extends PluginBase implements Listener{
 
@@ -43,6 +44,6 @@ class MainClass extends PluginBase implements Listener{
 	 * @ignoreCancelled false
 	 */
 	public function onSpawn(PlayerRespawnEvent $event){
-		Player::broadcastMessage($event->getPlayer()->getDisplayName() . " has just spawned!");
+		Server::getInstance()->broadcastMessage($event->getPlayer()->getDisplayName() . " has just spawned!");
 	}
 }

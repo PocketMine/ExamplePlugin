@@ -4,7 +4,6 @@ main: ExamplePlugin\MainClass
 version: 1.0.0
 api: [1.0.0]
 
-
 load: POSTWORLD
 author: PocketMine Team
 description: Example plugin showing the new API
