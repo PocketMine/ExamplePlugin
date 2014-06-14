@@ -3,8 +3,6 @@
 namespace ExamplePlugin;
 
 use pocketmine\command\Command;
-use pocketmine\command\CommandExecutor;
-use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerRespawnEvent;
 use pocketmine\Player;
@@ -12,7 +10,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
 
-class MainClass extends PluginBase implements Listener, CommandExecutor{
+class MainClass extends PluginBase implements Listener{
 
 	public function onLoad(){
 		$this->getLogger()->info(TextFormat::WHITE . "I've been loaded!");
