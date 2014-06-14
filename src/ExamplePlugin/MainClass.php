@@ -15,17 +15,17 @@ use pocketmine\utils\TextFormat;
 class MainClass extends PluginBase implements Listener, CommandExecutor{
 
 	public function onLoad(){
-		$this->getLogger()->info(TextFormat::WHITE . "I've been loaded!");
+		$this->getLogger()->info("I've been loaded!");
 	}
 
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastPluginTask($this), 120);
-		$this->getLogger()->info(TextFormat::DARK_GREEN . "I've been enabled!");
+		$this->getLogger()->info("I've been enabled!");
     }
 
 	public function onDisable(){
-		$this->getLogger()->info(TextFormat::DARK_RED . "I've been disabled!");
+		$this->getLogger()->info("I've been disabled!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
