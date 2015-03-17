@@ -21,7 +21,7 @@ class MainClass extends PluginBase implements Listener{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastPluginTask($this), 120);
 		$this->getLogger()->info(TextFormat::DARK_GREEN . "I've been enabled!");
-    }
+    	}
 
 	public function onDisable(){
 		$this->getLogger()->info(TextFormat::DARK_RED . "I've been disabled!");
