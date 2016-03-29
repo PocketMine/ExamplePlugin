@@ -2,7 +2,7 @@
 name: ExamplePlugin
 main: ExamplePlugin\MainClass
 version: 1.0.0
-api: [1.0.0]
+api: [1.0.0, 2.0.0]
 
 load: POSTWORLD
 author: PocketMine Team
