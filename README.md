@@ -1,1 +1,1 @@
-#### Place these files inside a folder in the plugins directory.
+#### Place the compiled PHAR file inside the plugins directory.
